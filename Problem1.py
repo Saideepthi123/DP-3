@@ -1,3 +1,7 @@
+# // Time Complexity : O(n+m) where n is the len of nums, m is the max value in the given array
+# // Space Complexity : O(m) 
+# // Did this code successfully run on Leetcode : Yes
+# // Any problem you faced while coding this : no
 class Solution(object):
     def deleteAndEarn(self, nums):
         """
@@ -21,7 +25,7 @@ class Solution(object):
 
         m = max(nums) 
 
-        earnings = [0]*(m+1) # intial earnings as 0
+        earnings = [0]*(m+1) # intial earnings as 0 # sc O(n)
 
         for num in nums:
             earnings[num] += num # earnings[i] represent the number of points we can earn by deleting ith value in num
